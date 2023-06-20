@@ -1,0 +1,47 @@
+baseURL = "http://example.org/"  # TODO: update
+theme = "hugo-geekdoc"
+title = "PyCon Redux"
+
+# Geekdoc required configuration
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+disablePathToLower = true
+# Getting well formatted code blocks
+enableGitInfo = true
+
+defaultContentLanguage = "en"
+
+[languages.en]
+contentDir = "content/en"
+languageName = "English"
+
+# Needed for mermaid shortcodes
+[markup]
+  [markup.goldmark.renderer]
+    # Needed for mermaid shortcode
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 9
+
+[params]
+  # Enable 'Edit page' links. Requires 'geekdocRepo' param and the path must point to
+  # the parent directory of the 'content' folder.
+  geekdocEditPath = "edit/main/pycon-redux"
+
+  # (Optional, default static/brand.svg) Set the path to a logo for the Geekdoc
+  # relative to your 'static/' folder.
+  geekdocLogo = "Python.svg"
+
+  # (Optional, default none) Set source repository location. Used for "Edit page" links.
+  # You can also specify this parameter per page in front matter.
+  geekdocRepo = "https://github.com/jamesbraza/pycon-redux"
+
+  # (Optional, default none) Adds a "Content licensed under <license>" line to the footer.
+  # Could be used if you want to define a default license for your content.
+  [params.geekdocContentLicense]
+    name = "CC BY-SA 4.0"
+    link = "https://creativecommons.org/licenses/by-sa/4.0/"
+
+[taxonomies]
+   tag = "tags"
