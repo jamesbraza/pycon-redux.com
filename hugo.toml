@@ -1,4 +1,4 @@
-baseURL = "https://jamesbraza.github.io/pycon-redux"
+baseURL = "https://jamesbraza.github.io/pycon-redux/"
 theme = "hugo-geekdoc"
 title = "PyCon Redux"
 
