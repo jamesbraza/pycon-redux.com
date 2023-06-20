@@ -1,0 +1,3 @@
+# Use curl of GitHub release instead of git submodule, since it avoids wasting
+# time with npm install
+hugo-geekdoc/
