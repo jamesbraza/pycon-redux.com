@@ -1,0 +1,4 @@
+coverage
+pip-tools
+pre-commit
+pytest
