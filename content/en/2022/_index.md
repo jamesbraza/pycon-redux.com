@@ -2,14 +2,22 @@
 title: 2022
 draft: false
 resources:
+  - name: pikachu-pants
+    src: pikachu-pants.jpg
+    title: Pandy Knight discussing the Pikachu on his pants
   - name: pycon-opener
-    src: "pycon-opener.jpg"
+    src: pycon-opener.jpg
     title: PyCon opening in the Grand Ballroom
+  - name: python-better-error-messages
+    src: python-better-error-messages.jpg
+    title: Pablo Galindo Salgado giving a talk on PEP 657
 ---
 
-[PyCon USA 2022](https://us.pycon.org/2022/)
-was held in the Salt Palace Convention Center in Salt Lake City, UT.
-Talks were given Friday April 29th to Sunday May 1st.
+[PyCon USA 2022](https://us.pycon.org/2022/) general information:
+
+- Location: Salt Palace Convention Center in Salt Lake City, UT
+- Talks: Friday April 29th to Sunday May 1st
+- [Conference schedule](https://us.pycon.org/2022/schedule/)
 
 {{< img name="pycon-opener" size="small" >}}
 
@@ -34,6 +42,14 @@ Talks were given Friday April 29th to Sunday May 1st.
 ### [If an asyncio.Task fails in the woods and nobody is around to see it, does it still page you at 3am - Jason Fried][4]
 
 {{< include file="/2022/asyncio-task-failure.md.part" >}}
+
+## Day 2
+
+{{< img name="python-better-error-messages" size="small" >}}
+
+## Day 3
+
+{{< img name="pikachu-pants" size="tiny" >}}
 
 [1]: {{< ref "/perfect-match.md" >}}
 [2]: {{< ref "/pipe-operator.md" >}}
