@@ -15,27 +15,25 @@ class Talk:
     date: datetime
 
 
-today = datetime.now()
+today = datetime.today()
 
 
 def get_display_brute_conditionals(talk: Talk) -> str | None:
     if talk.status == Status.PLANNED:
         if talk.date > today:
             return "future"
-        else:
-            return "cancelled"
-    elif talk.status == Status.DELIVERED:
+        return "cancelled"
+    if talk.status == Status.DELIVERED:
         if talk.date > today:
             return "rescheduled"
-        else:
-            return "past"
+        return "past"
     return None
 
 
 def get_display_condensed_conditionals(talk: Talk) -> str | None:
     if talk.status == Status.PLANNED:
         return "future" if talk.date > today else "cancelled"
-    elif talk.status == Status.DELIVERED:
+    if talk.status == Status.DELIVERED:
         return "rescheduled" if talk.date > today else "past"
     return None
 
