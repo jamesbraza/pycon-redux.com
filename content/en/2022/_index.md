@@ -3,6 +3,10 @@ title: 2022
 draft: false
 ---
 
+[PyCon USA 2022](https://us.pycon.org/2022/)
+was held in the Salt Palace Convention Center in Salt Lake City, UT.
+Talks were given Friday April 29th to Sunday May 1st.
+
 ## Day 1
 
 ### [Keynote - Łukasz Langa]({{< ref "/keynote.md" >}})
