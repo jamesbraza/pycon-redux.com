@@ -3,7 +3,7 @@ title: Perfect Match
 draft: false
 ---
 
-{{< include file="/2022/_includes/perfect-match.part.md" type="page" >}}
+{{< include file="/2022/perfect-match.md.part" >}}
 
 {{< youtube XpxTrDDcpPE >}}
 
