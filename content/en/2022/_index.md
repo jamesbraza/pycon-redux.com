@@ -29,11 +29,11 @@ resources:
 
 ### [A Perfect Match: The history, design, implementation, and future of Python's structural pattern matching - Brandt Bucher][1]
 
-{{< include file="/2022/perfect-match.md.part" >}}
+{{< include file="/2022/match-statement.md.part" >}}
 
 ### [Demystifying Python’s Internals: Diving into CPython by implementing a pipe operator - Sebastiaan Zeeff][2]
 
-{{< include file="/2022/pipe-operator.md.part" >}}
+{{< include file="/2022/adding-pipe-operator.md.part" >}}
 
 ### [What to Do When the Bug Is in Someone Else's Code - Paul Ganssle][3]
 
@@ -51,7 +51,7 @@ resources:
 
 {{< img name="pikachu-pants" size="tiny" >}}
 
-[1]: {{< ref "/perfect-match.md" >}}
-[2]: {{< ref "/pipe-operator.md" >}}
+[1]: {{< ref "/match-statement.md" >}}
+[2]: {{< ref "/adding-pipe-operator.md" >}}
 [3]: {{< ref "/bug-elsewhere.md" >}}
 [4]: {{< ref "/asyncio-task-failure.md" >}}
