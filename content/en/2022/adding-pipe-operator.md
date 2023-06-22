@@ -6,4 +6,6 @@ weight: 20
 
 {{< include file="/2022/adding-pipe-operator.md.part" >}}
 
-{{< youtube HYKGZunmF50 >}}
+<p></p>
+
+{{< youtube -dJolYw8tnk >}}

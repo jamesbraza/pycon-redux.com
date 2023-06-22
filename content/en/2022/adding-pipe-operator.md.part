@@ -1,2 +1,2 @@
-An instructive talk on how to add new syntax to Python.
-&nbsp;<pre></pre>
+An instructive talk on how to add new syntax
+(in this case, a pipe `|` operator) to Python.
