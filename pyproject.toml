@@ -1,0 +1,28 @@
+[tool.pylint]
+# SEE: https://github.com/PyCQA/pylint/blob/master/examples/pylintrc
+
+[tool.pylint.reports]
+
+# Set true to activate the evaluation score.
+score = false
+
+[tool.pylint.messages_control]
+
+# Disable the message, report, category or checker with the given id(s).
+disable = [
+    "missing-docstring",  # Let docformatter and ruff take care of docstrings
+    "empty-docstring",  # Let docformatter and ruff take care of docstrings
+    "too-few-public-methods",  # Don't care to enforce this
+    "too-many-arguments",  # Don't care to enforce this
+    "wrong-import-order",  # Rely on isort for this
+    "ungrouped-imports",  # Rely on isort for this
+    "unused-wildcard-import",  # Wildcard imports are convenient
+    "wildcard-import",  # Wildcard imports are convenient
+    "unsubscriptable-object",  # Buggy, SEE: https://github.com/PyCQA/pylint/issues/3637
+    "logging-fstring-interpolation",  # f-strings are convenient
+]
+
+# Enable the message, report, category or checker with the given id(s).
+enable = [
+    "useless-suppression",  # Print unused `pylint: disable` comments
+]
