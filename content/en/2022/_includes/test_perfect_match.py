@@ -1,7 +1,7 @@
 from collections.abc import Callable
 
 import pytest
-from datetime import datetime, timedelta
+from datetime import timedelta
 from perfect_match import (
     get_display_brute_conditionals,
     Talk,
@@ -9,10 +9,11 @@ from perfect_match import (
     get_display_condensed_conditionals,
     get_display_lookup,
     get_display_match,
+    today,
 )
 
-FUTURE = datetime.now() + timedelta(days=1)
-PAST = datetime.now() + timedelta(days=-1)
+FUTURE = today + timedelta(days=1)
+PAST = today + timedelta(days=-1)
 
 
 @pytest.mark.parametrize(

@@ -40,7 +40,7 @@ repos:
         args:
           - --check-filenames
           - --check-hidden
-          - --ignore-words-list=ser
+          - --ignore-words-list=astroid,ser
   - repo: https://github.com/myint/docformatter
     rev: v1.7.0
     hooks:
@@ -54,7 +54,18 @@ repos:
     hooks:
       - id: black
   - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: v0.0.273
+    rev: v0.0.274
     hooks:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix]
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.4.0
+    hooks:
+      - id: mypy
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
