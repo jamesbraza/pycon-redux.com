@@ -1,2 +1,4 @@
-Paul Ganssle is a maintainer of `python-dateutil`,
+Paul Ganssle is a maintainer of [`python-dateutil`][1],
 and here he discusses handling bugs in third party libraries.
+
+[1]: https://github.com/dateutil/dateutil
