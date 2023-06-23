@@ -13,7 +13,7 @@ It also suggests multiple tools:
 - The memory profiler [`Scalene`](https://github.com/plasma-umass/scalene)
 - For immediate huge performance gains,
   just switch Python interpreter: [`Pyston`][3]
-  (maintainer Kevin Modzelewski gave a [talk on performant code][6]),
+  (maintainer Kevin Modzelewski gave the [performant code talk][6]),
   [`Cython`][4] (called "cythonizing"),
   or [`PyPy`][5] (JIT)
 
