@@ -8,9 +8,6 @@ resources:
   - name: pycon-opener
     src: pycon-opener.jpg
     title: PyCon opening in the Grand Ballroom
-  - name: python-better-error-messages
-    src: python-better-error-messages.jpg
-    title: Pablo Galindo Salgado giving a talk on PEP 657
 ---
 
 [PyCon USA 2022](https://us.pycon.org/2022/) general information:
@@ -23,17 +20,17 @@ resources:
 
 ## Day 1
 
-### [Keynote - Łukasz Langa]({{< ref "/keynote.md" >}})
+### [Keynote (Day 1) - Łukasz Langa]({{< ref "keynote-day1.md" >}})
 
-{{< include file="/2022/keynote.md.part" >}}
+{{< include file="/2022/keynote-day1.md.part" >}}
 
 ### [A Perfect Match: The history, design, implementation, and future of Python's structural pattern matching - Brandt Bucher][1]
 
-{{< include file="/2022/perfect-match.md.part" >}}
+{{< include file="/2022/match-statement.md.part" >}}
 
 ### [Demystifying Python’s Internals: Diving into CPython by implementing a pipe operator - Sebastiaan Zeeff][2]
 
-{{< include file="/2022/pipe-operator.md.part" >}}
+{{< include file="/2022/adding-pipe-operator.md.part" >}}
 
 ### [What to Do When the Bug Is in Someone Else's Code - Paul Ganssle][3]
 
@@ -45,13 +42,37 @@ resources:
 
 ## Day 2
 
-{{< img name="python-better-error-messages" size="small" >}}
+{{< img name="better-error-messages" size="small" >}}
+
+### [Keynote (Day 2) - Peter Wang]({{< ref "keynote-day2.md" >}})
+
+{{< include file="/2022/keynote-day2.md.part" >}}
+
+### [Making Python better one error message at a time - Pablo Galindo Salgado][5]
+
+{{< include file="/2022/better-error-messages/better-error-messages.md.part" >}}
+
+### [How we standardized editable installs PEP 660 vs PEP 662 - Bernát Gábor][6]
+
+{{< include file="/2022/editable-installs.md.part" >}}
+
+### [Writing performant code for modern Python interpreters - Kevin Modzelewski][7]
+
+{{< include file="/2022/performant-code.md.part" >}}
+
+### [Write faster Python! Common performance anti patterns - Anthony Shaw][8]
+
+{{< include file="/2022/performance-antipatterns.md.part" >}}
 
 ## Day 3
 
 {{< img name="pikachu-pants" size="tiny" >}}
 
-[1]: {{< ref "/perfect-match.md" >}}
-[2]: {{< ref "/pipe-operator.md" >}}
-[3]: {{< ref "/bug-elsewhere.md" >}}
-[4]: {{< ref "/asyncio-task-failure.md" >}}
+[1]: {{< ref "match-statement.md" >}}
+[2]: {{< ref "adding-pipe-operator.md" >}}
+[3]: {{< ref "bug-elsewhere.md" >}}
+[4]: {{< ref "asyncio-task-failure.md" >}}
+[5]: {{< ref "better-error-messages.md" >}}
+[6]: {{< ref "editable-installs.md" >}}
+[7]: {{< ref "performant-code.md" >}}
+[8]: {{< ref "performance-antipatterns.md" >}}

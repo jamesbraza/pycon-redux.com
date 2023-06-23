@@ -1,0 +1,25 @@
+Microsoft has a team working on making Python faster (over 25% for Python 3.11),
+called the "Faster CPython" team.
+Brandt Bucher (gave the [`match` statement talk][1])
+and Anthony Shaw (gave this talk) are both team members.
+
+A savvy point made is to only optimize
+when there'll be a > 10% performance gain,
+otherwise observed improvement may just be CPU noise.
+This talk will teach you about speed: using [`__slots__`][2],
+not using `dataclass`es, and removing helper functions.
+It also suggests multiple tools:
+
+- The memory profiler [`Scalene`](https://github.com/plasma-umass/scalene)
+- For immediate huge performance gains,
+  just switch Python interpreter: [`Pyston`][3]
+  (maintainer Kevin Modzelewski gave a [talk on performant code][6]),
+  [`Cython`][4] (called "cythonizing"),
+  or [`PyPy`][5] (JIT)
+
+[1]: {{< ref "match-statement.md" >}}
+[2]: https://docs.python.org/3/reference/datamodel.html#object.__slots__
+[3]: https://github.com/pyston/pyston
+[4]: https://github.com/cython/cython
+[5]: https://www.pypy.org/
+[6]: {{< ref "performant-code.md" >}}

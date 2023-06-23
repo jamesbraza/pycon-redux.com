@@ -1,0 +1,16 @@
+Python is quite a dynamic language,
+and this talk imbibes a deeper appreciation for its dynamism.
+Kevin Modzelewski (kmod) is a maintainer of [`Pyston`][1],
+a performance-optimizing JIT for Python,
+and gave this talk analyzing modern Python interpreters' performance.
+
+Two useful tools shared were the [Python Speed Center][2],
+which analyzes Python speed changes for each commit,
+and [`pyperformance`][3], a benchmarking tool.
+Secondly, a notable saying from his talk:
+
+- Python's dynamic features are not free, increasingly so in newer versions
+
+[1]: https://github.com/pyston/pyston
+[2]: https://speed.python.org/
+[3]: https://github.com/python/pyperformance
