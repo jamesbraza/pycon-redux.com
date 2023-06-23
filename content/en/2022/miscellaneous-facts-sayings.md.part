@@ -1,0 +1,7 @@
+- Typed your code?
+  Compile your code to C extensions with
+  [`mypyc`](https://github.com/mypyc/mypyc) for 10X speed boost
+- Instagram is fully Python, both frontend and backend,
+  and wrote a performance-oriented CPython 3.8-based runtime [`Cinder`][1]
+
+[1]: https://github.com/facebookincubator/cinder
