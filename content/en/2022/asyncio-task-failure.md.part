@@ -1,2 +1,3 @@
 Jason Fried is a pioneer of Python at Facebook,
-and gave this talk filled with wisdom about using `asyncio` at scale.
+and gave a wisdom-filled talk on using `asyncio` at scale.
+He comically made it seem like he has learned many lessons the hard way.

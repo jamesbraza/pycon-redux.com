@@ -1,4 +1,6 @@
 Paul Ganssle is a maintainer of [`python-dateutil`][1],
 and here he discusses handling bugs in third party libraries.
+This talk details a decision-tree like
+framework for dealing with external dependencies.
 
 [1]: https://github.com/dateutil/dateutil
