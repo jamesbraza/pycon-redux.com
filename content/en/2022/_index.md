@@ -42,8 +42,6 @@ resources:
 
 ## Day 2
 
-{{< img name="better-error-messages" size="small" >}}
-
 ### [Keynote (Day 2) - Peter Wang]({{< ref "keynote-day2.md" >}})
 
 {{< include file="/2022/keynote-day2.md.part" >}}
