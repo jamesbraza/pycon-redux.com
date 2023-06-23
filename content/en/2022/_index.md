@@ -20,7 +20,7 @@ resources:
 
 ## Day 1
 
-### [Keynote (Day 1) - Łukasz Langa]({{< ref "/keynote-day1.md" >}})
+### [Keynote (Day 1) - Łukasz Langa]({{< ref "keynote-day1.md" >}})
 
 {{< include file="/2022/keynote-day1.md.part" >}}
 
@@ -44,7 +44,7 @@ resources:
 
 {{< img name="better-error-messages" size="small" >}}
 
-### [Keynote (Day 2) - Peter Wang]({{< ref "/keynote-day2.md" >}})
+### [Keynote (Day 2) - Peter Wang]({{< ref "keynote-day2.md" >}})
 
 {{< include file="/2022/keynote-day2.md.part" >}}
 
@@ -60,14 +60,19 @@ resources:
 
 {{< include file="/2022/performant-code.md.part" >}}
 
+### [Write faster Python! Common performance anti patterns - Anthony Shaw][8]
+
+{{< include file="/2022/performance-antipatterns.md.part" >}}
+
 ## Day 3
 
 {{< img name="pikachu-pants" size="tiny" >}}
 
-[1]: {{< ref "/match-statement.md" >}}
-[2]: {{< ref "/adding-pipe-operator.md" >}}
-[3]: {{< ref "/bug-elsewhere.md" >}}
-[4]: {{< ref "/asyncio-task-failure.md" >}}
-[5]: {{< ref "/better-error-messages.md" >}}
-[6]: {{< ref "/editable-installs.md" >}}
-[7]: {{< ref "/performant-code.md" >}}
+[1]: {{< ref "match-statement.md" >}}
+[2]: {{< ref "adding-pipe-operator.md" >}}
+[3]: {{< ref "bug-elsewhere.md" >}}
+[4]: {{< ref "asyncio-task-failure.md" >}}
+[5]: {{< ref "better-error-messages.md" >}}
+[6]: {{< ref "editable-installs.md" >}}
+[7]: {{< ref "performant-code.md" >}}
+[8]: {{< ref "performance-antipatterns.md" >}}
