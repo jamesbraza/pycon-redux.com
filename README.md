@@ -21,4 +21,9 @@ curl -L https://github.com/thegeeklab/hugo-geekdoc/releases/download/v${GEEKDOC_
     tar -xz -C themes/hugo-geekdoc/ --strip-components=1
 ```
 
+## Style
+
+Markdown content in this website are written using [semantic linefeeds][2].
+
 [1]: https://geekdocs.de/usage/getting-started/#option-1-download-pre-build-release-bundle
+[2]: https://rhodesmill.org/brandon/2012/one-sentence-per-line/
