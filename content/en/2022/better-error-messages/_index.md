@@ -1,7 +1,7 @@
 ---
 title: Better Error Messages
 draft: false
-weight: 120
+weight: 115
 resources:
   - name: better-error-messages
     src: better-error-messages.jpg

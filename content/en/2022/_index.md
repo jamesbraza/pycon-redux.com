@@ -52,6 +52,14 @@ resources:
 
 {{< include file="/2022/better-error-messages/better-error-messages.md.part" >}}
 
+### [How we standardized editable installs PEP 660 vs PEP 662 - Bernát Gábor][6]
+
+{{< include file="/2022/editable-installs.md.part" >}}
+
+### [Writing performant code for modern Python interpreters - Kevin Modzelewski][7]
+
+{{< include file="/2022/performant-code.md.part" >}}
+
 ## Day 3
 
 {{< img name="pikachu-pants" size="tiny" >}}
@@ -61,3 +69,5 @@ resources:
 [3]: {{< ref "/bug-elsewhere.md" >}}
 [4]: {{< ref "/asyncio-task-failure.md" >}}
 [5]: {{< ref "/better-error-messages.md" >}}
+[6]: {{< ref "/editable-installs.md" >}}
+[7]: {{< ref "/performant-code.md" >}}
