@@ -1,0 +1,8 @@
+Peter Wang co-founded Anaconda,
+and gave quite a hopeful talk on the future of Python.
+
+He described the collective motion
+from client-server towards client-only compute,
+while discussing [PyScript](https://github.com/pyscript/pyscript),
+a JavaScript competitor to run Python in HTML
+backed by [WASM](https://webassembly.org/).

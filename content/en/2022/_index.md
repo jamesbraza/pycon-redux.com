@@ -8,9 +8,6 @@ resources:
   - name: pycon-opener
     src: pycon-opener.jpg
     title: PyCon opening in the Grand Ballroom
-  - name: python-better-error-messages
-    src: python-better-error-messages.jpg
-    title: Pablo Galindo Salgado giving a talk on PEP 657
 ---
 
 [PyCon USA 2022](https://us.pycon.org/2022/) general information:
@@ -45,7 +42,15 @@ resources:
 
 ## Day 2
 
-{{< img name="python-better-error-messages" size="small" >}}
+{{< img name="better-error-messages" size="small" >}}
+
+### [Keynote (Day 2) - Peter Wang]({{< ref "/keynote-day2.md" >}})
+
+{{< include file="/2022/keynote-day2.md.part" >}}
+
+### [Making Python better one error message at a time - Pablo Galindo Salgado][5]
+
+{{< include file="/2022/better-error-messages/better-error-messages.md.part" >}}
 
 ## Day 3
 
@@ -55,3 +60,4 @@ resources:
 [2]: {{< ref "/adding-pipe-operator.md" >}}
 [3]: {{< ref "/bug-elsewhere.md" >}}
 [4]: {{< ref "/asyncio-task-failure.md" >}}
+[5]: {{< ref "/better-error-messages.md" >}}
