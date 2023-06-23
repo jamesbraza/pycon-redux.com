@@ -1,4 +1,4 @@
-PEP authors are required to be objective,
+Some background is PEP authors are required to be objective,
 which can be challenging if one really believes in something.
 Please read [PEP 1](https://peps.python.org/pep-0001/)
 for more information on what's required of PEP authors.
@@ -7,8 +7,6 @@ for more information on what's required of PEP authors.
 and [PEP 662](https://peps.python.org/pep-0662/) (rejected)
 were competing PEPs around editable installations.
 Bernát Gábor, the maintainer of [`tox`](https://github.com/tox-dev/tox),
-stepped up as the author of PEP 662.
-It was laudable of him to volunteer
-to be the champion of a PEP that ultimately lost out.
+stepped up to champion PEP 662, which ultimately lost out.
 Overall, this talk provides real insight into
 how the Python packaging sausage gets made.
