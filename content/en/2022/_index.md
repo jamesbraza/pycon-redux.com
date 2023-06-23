@@ -23,9 +23,9 @@ resources:
 
 ## Day 1
 
-### [Keynote - Łukasz Langa]({{< ref "/keynote.md" >}})
+### [Keynote (Day 1) - Łukasz Langa]({{< ref "/keynote-day1.md" >}})
 
-{{< include file="/2022/keynote.md.part" >}}
+{{< include file="/2022/keynote-day1.md.part" >}}
 
 ### [A Perfect Match: The history, design, implementation, and future of Python's structural pattern matching - Brandt Bucher][1]
 
