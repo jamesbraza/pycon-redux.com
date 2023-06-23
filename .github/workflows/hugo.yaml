@@ -34,7 +34,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GEEKDOC_VERSION: 0.39.4
-      HUGO_VERSION: 0.114.0
+      # Match Hugo version used in Geekdocs CI
+      # SEE: https://github.com/thegeeklab/hugo-geekdoc/blob/main/.drone.yml#L29
+      HUGO_VERSION: 0.105.0
     steps:
       - name: Install Hugo CLI
         # yamllint disable rule:line-length

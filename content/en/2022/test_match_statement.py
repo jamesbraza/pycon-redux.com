@@ -2,7 +2,7 @@ from collections.abc import Callable
 
 import pytest
 from datetime import timedelta
-from perfect_match import (
+from match_statement import (
     get_display_brute_conditionals,
     Talk,
     Status,
