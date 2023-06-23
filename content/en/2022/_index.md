@@ -18,6 +18,8 @@ resources:
 
 {{< img name="pycon-opener" size="small" >}}
 
+{{< toc >}}
+
 ## Day 1
 
 ### [Keynote (Day 1) - Łukasz Langa]({{< ref "keynote-day1.md" >}})
