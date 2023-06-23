@@ -68,6 +68,14 @@ resources:
 
 {{< img name="pikachu-pants" size="tiny" >}}
 
+### [Building a Python Code Completer - Meredydd Luff]({{< ref "code-completer.md" >}})
+
+{{< include file="/2022/code-completer.md.part" >}}
+
+## Miscellaneous Facts and Sayings
+
+{{< include file="/2022/miscellaneous-facts-sayings.md.part" >}}
+
 [1]: {{< ref "match-statement.md" >}}
 [2]: {{< ref "adding-pipe-operator.md" >}}
 [3]: {{< ref "bug-elsewhere.md" >}}
