@@ -1,7 +1,27 @@
+Memorable quotes:
+
+- "If you bash your head against a wall enough times, it becomes a pile of YAML"
+- **"Duck typing paradigm: speak in terms of behaviors (not types)"**
+- **"Make impossible values unrepresentable"**
+- "Focus on building things that solve people’s problems"
+- **"Live and die on your engineering"**
+
+Miscellaneous tooling findings:
+
+- Several tools used Rust bindings for a no-GIL backend
 - Typed your code?
   Compile your code to C extensions with
   [`mypyc`](https://github.com/mypyc/mypyc) for 10X speed boost
 - Instagram is fully Python, both frontend and backend,
   and wrote a performance-oriented CPython 3.8-based runtime [`Cinder`][1]
+- [`attrs`][2] is similar to `dataclasses`
+  but has a big performance gain via `__slots__`
+- [Pants build][3] intelligently caches unit tests for super fast CI
+  (from [this talk](https://youtu.be/0INmW9KaAp4))
+  - Think: only running relevant tests, not entire test suite
+- [Semgrep][4] easily create linting rules for your domain's specifics
 
 [1]: https://github.com/facebookincubator/cinder
+[2]: https://github.com/python-attrs/attrs
+[3]: https://www.pantsbuild.org/
+[4]: https://semgrep.dev/
