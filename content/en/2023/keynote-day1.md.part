@@ -1,0 +1,18 @@
+The author of [`coverage`][1],
+Ned Batchelder is a Python community OG.
+He chose to give the keynote talk on
+"high uncertainty components in complex systems" (people).
+
+This talk shares a comical perspective comparing people with software.
+A few examples are people are
+non-standard, undocumented, hidden state, and have unclear error messages.
+It then gives an API User's Guide for people,
+detailing a valuable lesson,
+that all messages contain information and sentiment.
+
+Ned also shared some advice he was given from Łukasz Langa:
+
+- If you don't say something controversial in a PyCon keynote,
+  are you really living your best life?
+
+[1]: https://github.com/nedbat/coveragepy

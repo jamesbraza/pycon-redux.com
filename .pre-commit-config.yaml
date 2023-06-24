@@ -40,7 +40,7 @@ repos:
         args:
           - --check-filenames
           - --check-hidden
-          - --ignore-words-list=astroid,ser
+          - --ignore-words-list=astroid,ned,ser
   - repo: https://github.com/myint/docformatter
     rev: v1.7.0
     hooks:
