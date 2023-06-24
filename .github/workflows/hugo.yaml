@@ -1,6 +1,6 @@
 ---
 # Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo site to Pages
+name: Deploy Hugo Site
 
 on: # yamllint disable-line rule:truthy
   # Runs on pushes targeting the default branch
@@ -35,7 +35,7 @@ jobs:
     env:
       GEEKDOC_VERSION: 0.39.4
       # NOTE: keep Hugo version >= 0.111.0, for table of contents improvements
-      HUGO_VERSION: 0.114.0
+      HUGO_VERSION: 0.114.1
     steps:
       - name: Install Hugo CLI
         # yamllint disable rule:line-length
