@@ -1,5 +1,5 @@
 ---
-name: Lint and test Python
+name: Lint and Test
 
 on: # yamllint disable-line rule:truthy
   pull_request:
