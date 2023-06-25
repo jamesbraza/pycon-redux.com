@@ -1,0 +1,18 @@
+A brief review of Python parallelism:
+- A defining feature of Python is the [global interpreter lock][1] (GIL),
+  a design decision that limits each Python process
+  to at most one executing thread.
+- Prior to Python 3.12, parallelism can be accomplished via:
+  multithreading (built-in [`threading`][2]),
+  multiprocessing (built-in [`multiprocessing`][3]),
+  coroutines (built-in [`asyncio`][4]),
+  or distributed systems
+
+Łukasz Langa gives a nice redux on combining
+`asyncio.TaskGroup`s and `multiprocessing.managers.SharedMemoryManager`
+to work around the GIL in a data processing application.
+
+[1]: https://en.wikipedia.org/wiki/Global_interpreter_lock
+[2]: https://docs.python.org/3/library/threading.html
+[3]: https://docs.python.org/3/library/multiprocessing.html
+[4]: https://docs.python.org/3/library/asyncio.html

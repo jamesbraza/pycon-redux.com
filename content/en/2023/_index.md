@@ -16,3 +16,13 @@ draft: false
 ### [Keynote (Day 1) - Ned Batchelder]({{< ref "keynote-day1.md" >}})
 
 {{< include file="/2023/keynote-day1.md.part" >}}
+
+### [Inside CPython 3.11's new specializing, adaptive interpreter - Brandt Bucher][1]
+
+{{< include file="/2023/adaptive-interpreter.md.part" >}}
+
+### [Working Around the GIL with asyncio]({{< ref "asyncio-and-gil.md" >}})
+
+{{< include file="/2023/asyncio-and-gil.md.part" >}}
+
+[1]: {{< ref "adaptive-interpreter.md" >}}
