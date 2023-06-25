@@ -25,4 +25,9 @@ draft: false
 
 {{< include file="/2023/asyncio-and-gil.md.part" >}}
 
+### [Working with Time Zones: Everything You Wish You Didn't Need to Know - Paul Ganssle][2]
+
+{{< include file="/2023/timezones.md.part" >}}
+
 [1]: {{< ref "adaptive-interpreter.md" >}}
+[2]: {{< ref "timezones.md" >}}

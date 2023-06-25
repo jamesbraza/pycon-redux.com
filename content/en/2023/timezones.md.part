@@ -1,0 +1,12 @@
+Paul Ganssle is a [`python-dateutil`][1] maintainer and [PEP 615][2]'s author,
+and here he shares stories of
+all the complicating factors involved with timezone management.
+
+- Multiple timezone systems and governing bodies
+- Vary across location, transitions/year, country, time, and even ethnic group
+- Variable amount of timezone releases per year (not synced with Python releases)
+
+This talk explains decisions made within Python's `zoneinfo` library.
+
+[1]: https://github.com/dateutil/dateutil
+[2]: https://peps.python.org/pep-0615/
