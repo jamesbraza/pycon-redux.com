@@ -1,0 +1,8 @@
+Bloomberg has open sourced a memory profiling tool [`memray`][1],
+of which Pablo is a main contributor.
+This visually appealing talk walks through the interaction
+between Python and the host OS,
+how a memory profiler can be inserted between them,
+and ways a memory profiler could function.
+
+[1]: https://github.com/bloomberg/memray
