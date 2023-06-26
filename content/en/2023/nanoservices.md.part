@@ -1,0 +1,13 @@
+Python has an [Iterator Protocol][1] that generators implement.
+Generators also offer lesser known methods [`send`][2] and [`throw`][3].
+Reuven's talk describes how these two facts together
+enable generators to create a stateful "nanoservice".
+
+Some might think `yield from` is just syntactic sugar for
+yielding within a `for` loop.
+The talk is tied together with a meaningful use case for `yield from`
+to connect subroutines within the nanoservice.
+
+[1]: https://docs.python.org/3/c-api/iter.html
+[2]: https://docs.python.org/3/reference/expressions.html#generator.send
+[3]: https://docs.python.org/3/reference/expressions.html#generator.throw

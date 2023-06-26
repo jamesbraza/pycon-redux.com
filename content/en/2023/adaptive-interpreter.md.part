@@ -1,0 +1,15 @@
+This talk by Brandt Bucher gives a behind the scenes look on CPython 3.11's new
+specializing, adaptive interpreter.
+It also talks about further improvements from 3.12,
+please see [PEP 659][2] for more information on this.
+
+- Specializing: interpreter specializes based on types or values
+- Adaptive: interpreter adapts when types or values change
+
+Brandt also made a tool [`specialist`][1] to visualize
+where the interpreter's optimization is succeeding or failing.
+
+Mark Shannon's talk on (related to XYZ)
+
+[1]: https://github.com/brandtbucher/specialist
+[2]: https://peps.python.org/pep-0659/

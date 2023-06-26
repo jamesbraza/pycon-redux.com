@@ -33,7 +33,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      GEEKDOC_VERSION: 0.39.4
+      GEEKDOC_VERSION: 0.39.5
       # NOTE: keep Hugo version >= 0.111.0, for table of contents improvements
       HUGO_VERSION: 0.114.1
     steps:

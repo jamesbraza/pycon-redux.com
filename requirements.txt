@@ -6,6 +6,8 @@
 #
 astroid==2.15.5
     # via pylint
+attrs==23.1.0
+    # via pytest-subtests
 build==0.10.0
     # via pip-tools
 cfgv==3.3.1
@@ -53,6 +55,10 @@ pylint==2.17.4
 pyproject-hooks==1.0.0
     # via build
 pytest==7.3.2
+    # via
+    #   -r requirements.in
+    #   pytest-subtests
+pytest-subtests==0.11.0
     # via -r requirements.in
 pyyaml==6.0
     # via pre-commit
