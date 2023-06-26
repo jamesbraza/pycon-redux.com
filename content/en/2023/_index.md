@@ -51,6 +51,16 @@ draft: false
 
 {{< include file="/2023/faster-cpython.md.part" >}}
 
+## Day 3
+
+### [Keynote (Day 1) - Guido van Rossum]({{< ref "keynote-day3.md" >}})
+
+{{< include file="/2023/keynote-day3.md.part" >}}
+
+## Miscellaneous Facts and Sayings
+
+{{< include file="/2023/miscellaneous-facts-sayings.md.part" >}}
+
 [1]: {{< ref "adaptive-interpreter.md" >}}
 [2]: {{< ref "timezones.md" >}}
 [3]: {{< ref "per-gil-interpreter.md" >}}

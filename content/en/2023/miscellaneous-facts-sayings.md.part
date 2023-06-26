@@ -1,0 +1,36 @@
+Memorable quotes or ideas:
+
+- "ChatGPT is a stochastic parrot"
+- Dogfooding: being a user of one's own products
+
+Python language learnings:
+
+- [PEP 701][4] in Python 3.12 allows for arbitrary code in f-strings.
+  No more alternation of `""` with `''`
+- Confusion of `str.lstrip` vs `str.removeprefix`
+  and `str.rstrip` vs `str.removesuffix` is a huge source of bugs
+- There's active development on direct integration of Python with
+  web apps and mobile apps
+
+Miscellaneous tooling findings:
+
+- `ARCHITECTURE.md` is a standard filename for documenting architecture,
+  especially architecture invariants and design boundaries
+- [Structured concurrency][2] can be accomplished using [`asyncio.TaskGroup`][1]
+- PyCharm's inspection tool is available independently from PyCharm
+  as the tool [Qodana][3]
+- PyPI is adding support for [organization accounts][5]
+- [`etckeeper`][6] enables version controls for `/etc`,
+  such that `apt install` or `apt upgrade` make an easily revert-able VCS commit
+- The Python Packaging Authority has a tool [`cibuildwheel`][7]
+  to build and test wheels for multiple platforms
+- Rust's unofficial mascot Ferris the crab is cute: [Rustacean.net][8]
+
+[1]: https://docs.python.org/3/library/asyncio-task.html#task-groups
+[2]: https://en.wikipedia.org/wiki/Structured_concurrency
+[3]: https://www.jetbrains.com/qodana/
+[4]: https://peps.python.org/pep-0701/
+[5]: https://docs.pypi.org/organization-accounts/
+[6]: https://ubuntu.com/server/docs/tools-etckeeper
+[7]: https://github.com/pypa/cibuildwheel
+[8]: https://rustacean.net/
