@@ -1,7 +1,10 @@
 Memorable quotes or ideas:
 
+- Lower case and upper case names originate from the [printing press days][12]
 - "ChatGPT is a stochastic parrot"
 - Dogfooding: being a user of one's own products
+- There are 122740 ways to write `self` with Python interpreter's parser's
+  unicode normalization
 
 Python language learnings:
 
@@ -26,6 +29,11 @@ Miscellaneous tooling findings:
   to build and test wheels for multiple platforms
 - Rust's unofficial mascot Ferris the crab is cute: [Rustacean.net][8]
 
+Memorable lightning talks:
+
+- [Fight in Korea][9]: the inception of PyCon Korea
+- [Code Obfuscation][10]: obfuscated packages in PyPI and [typosquatting][11]
+
 [1]: https://docs.python.org/3/library/asyncio-task.html#task-groups
 [2]: https://en.wikipedia.org/wiki/Structured_concurrency
 [3]: https://www.jetbrains.com/qodana/
@@ -34,3 +42,7 @@ Miscellaneous tooling findings:
 [6]: https://ubuntu.com/server/docs/tools-etckeeper
 [7]: https://github.com/pypa/cibuildwheel
 [8]: https://rustacean.net/
+[9]: https://youtu.be/54q_cPCNNS8?t=170
+[10]: https://youtu.be/54q_cPCNNS8?t=2597
+[11]: https://en.wikipedia.org/wiki/Typosquatting
+[12]: https://www.mcgill.ca/oss/article/did-you-know-history/why-it-called-upper-and-lower-case
