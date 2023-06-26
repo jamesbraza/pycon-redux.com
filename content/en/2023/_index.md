@@ -1,6 +1,16 @@
 ---
 title: 2023
 draft: false
+resources:
+  - name: snowy-salt-lake-city
+    src: snowy-salt-lake-city.jpg
+    title: Beautiful backdrop behind Salt Lake City
+  - name: awaiting-lightning-talks
+    src: awaiting-lightning-talks.jpg
+    title: Just before on Lightning Talks to begin
+  - name: pycharm-cup
+    src: pycharm-cup.jpg
+    title: Best coffee of the conference
 ---
 
 [PyCon USA 2023](https://us.pycon.org/2023/) general information:
@@ -9,9 +19,13 @@ draft: false
 - Talks: Friday April 21st to Sunday April 23rd
 - [Conference schedule](https://us.pycon.org/2023/schedule/)
 
+{{< img name="snowy-salt-lake-city" size="small" >}}
+
 {{< toc >}}
 
 ## Day 1
+
+{{< img name="awaiting-lightning-talks" size="small" >}}
 
 ### [Keynote (Day 1) - Ned Batchelder]({{< ref "keynote-day1.md" >}})
 
@@ -38,6 +52,8 @@ draft: false
 {{< include file="/2023/nanoservices/nanoservices.md.part" >}}
 
 ## Day 2
+
+{{< img name="pycharm-cup" size="tiny" >}}
 
 ### [Python's syntactic sugar - Brett Cannon]({{< ref "syntactic-sugar.md" >}})
 
