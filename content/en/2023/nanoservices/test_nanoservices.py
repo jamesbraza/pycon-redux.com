@@ -1,4 +1,4 @@
-from nanoservice import moving_window_average_gen, ClearWindow, DumpData, demo
+from nanoservices import moving_window_average_gen, ClearWindow, DumpData, demo
 from pytest_subtests import SubTests
 
 

@@ -19,7 +19,7 @@ draft: false
 
 ### [Inside CPython 3.11's new specializing, adaptive interpreter - Brandt Bucher][1]
 
-{{< include file="/2023/adaptive-interpreter.md.part" >}}
+{{< include file="/2023/adaptive-interpreter/adaptive-interpreter.md.part" >}}
 
 ### [Working Around the GIL with asyncio - Łukasz Langa]({{< ref "asyncio-and-gil.md" >}})
 
@@ -35,7 +35,7 @@ draft: false
 
 ### [Generators, coroutines and nanoservices - Reuven Lerner][4]
 
-{{< include file="/2023/nanoservices.md.part" >}}
+{{< include file="/2023/nanoservices/nanoservices.md.part" >}}
 
 ## Day 2
 
@@ -53,17 +53,17 @@ draft: false
 
 ## Day 3
 
-### [Keynote (Day 1) - Guido van Rossum]({{< ref "keynote-day3.md" >}})
+### [Keynote (Day 3) - Guido van Rossum]({{< ref "keynote-day3" >}})
 
-{{< include file="/2023/keynote-day3.md.part" >}}
+{{< include file="/2023/keynote-day3/keynote-day3.md.part" >}}
 
 ## Miscellaneous Facts and Sayings
 
 {{< include file="/2023/miscellaneous-facts-sayings.md.part" >}}
 
-[1]: {{< ref "adaptive-interpreter.md" >}}
+[1]: {{< ref "adaptive-interpreter" >}}
 [2]: {{< ref "timezones.md" >}}
 [3]: {{< ref "per-gil-interpreter.md" >}}
-[4]: {{< ref "nanoservices.md" >}}
+[4]: {{< ref "nanoservices" >}}
 [5]: {{< ref "memory-profilers.md" >}}
 [6]: {{< ref "faster-cpython.md" >}}
