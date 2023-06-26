@@ -1,0 +1,28 @@
+I remember being very impressed with the [React Hooks][1] announcement,
+this talk had a similar effect on me.
+
+Here, Eric Snow (part of Microsoft's Faster CPython team),
+and author of [PEP 684][2] and [PEP 554][3],
+gave this talk on Python 3.12's per-interpreter GIL.
+To make a per-interpreter GIL feature possible,
+over 4000 shared process globals from CPython first had to be addressed,
+and over 8 PEPs were ultimately made!
+
+A per-interpreter GIL enables multicore parallelism,
+matching or outperforming _both_ multithreading and multiprocessing:
+- Short-running requests:
+  multithreading definitively outperforms multiprocessing.
+  A per-interpreter GIL outperformed multithreading
+- Long-running requests: multiprocessing outperforms multithreading.
+  A per-interpreter GIL equally performed multiprocessing
+
+A per-interpreter GIL will be the fifth method of parallelism in Python
+(see [Łukasz's talk][4] for other supported modes).
+It's accessible in Python 3.12 via the third party [`interpreters`][5] package
+and [PEP 554][3] will create a built-in for Python 3.13.
+
+[1]: https://youtu.be/dpw9EHDh2bM
+[2]: https://peps.python.org/pep-0684/
+[3]: https://peps.python.org/pep-0554/
+[4]: {{< ref "asyncio-and-gil.md" >}}
+[5]: https://github.com/ericsnowcurrently/interpreters

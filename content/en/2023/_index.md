@@ -29,5 +29,10 @@ draft: false
 
 {{< include file="/2023/timezones.md.part" >}}
 
+### [A Per-Interpreter GIL: Concurrency and Parallelism with Subinterpreters - Eric Snow][3]
+
+{{< include file="/2023/per-gil-interpreter.md.part" >}}
+
 [1]: {{< ref "adaptive-interpreter.md" >}}
 [2]: {{< ref "timezones.md" >}}
+[3]: {{< ref "per-gil-interpreter.md" >}}
