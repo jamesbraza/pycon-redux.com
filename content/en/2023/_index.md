@@ -33,6 +33,11 @@ draft: false
 
 {{< include file="/2023/per-gil-interpreter.md.part" >}}
 
+### [Generators, coroutines and nanoservices - Reuven Lerner][4]
+
+{{< include file="/2023/nanoservices.md.part" >}}
+
 [1]: {{< ref "adaptive-interpreter.md" >}}
 [2]: {{< ref "timezones.md" >}}
 [3]: {{< ref "per-gil-interpreter.md" >}}
+[4]: {{< ref "nanoservices.md" >}}
