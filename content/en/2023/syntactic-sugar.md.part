@@ -1,0 +1,12 @@
+Brett Cannon is a core developer of Python,
+with over 1000 commits to CPython as of June 2023.
+
+His talk was a thought experiment:
+which parts of Python 3.8 syntax are mandatory,
+and which can be considered syntactic sugar?
+He found 10 pieces of syntax were mandatory
+(to name a few: integers, function calls + `def`, `while`, `raise`),
+and [here's the full analysis][1].
+The talk also reviews the Python data model in depth.
+
+[1]: https://snarky.ca/mvpy-minimum-viable-python/

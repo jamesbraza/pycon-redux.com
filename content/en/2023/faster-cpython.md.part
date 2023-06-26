@@ -1,0 +1,20 @@
+Mark Shannon [initially proposed how to speed CPython ~5X][1],
+now being enacted by the Faster CPython team (he's on it).
+
+This talk primarily talked about the optimizations on the
+memory overhead required for Python classes.
+To name a few of the iterations:
+Python 3.2 used 352 bytes/class,
+Python 3.6 used 192 bytes/class,
+and Python 3.12 used 96 bytes/class.
+Future optimization can bring this below 80 bytes/class.
+Mark also went over how specialization works
+(also see [Brandt Bucher's adaptive interpreter talk][2])
+and a few other Faster Cpython team efforts.
+
+A notable saying from the talk:
+
+- Nothing is faster than nothing
+
+[1]: https://github.com/markshannon/faster-cpython/blob/master/plan.md
+[2]: {{< ref "adaptive-interpreter.md" >}}

@@ -21,7 +21,7 @@ draft: false
 
 {{< include file="/2023/adaptive-interpreter.md.part" >}}
 
-### [Working Around the GIL with asyncio]({{< ref "asyncio-and-gil.md" >}})
+### [Working Around the GIL with asyncio - Łukasz Langa]({{< ref "asyncio-and-gil.md" >}})
 
 {{< include file="/2023/asyncio-and-gil.md.part" >}}
 
@@ -37,7 +37,33 @@ draft: false
 
 {{< include file="/2023/nanoservices.md.part" >}}
 
+## Day 2
+
+### [Python's syntactic sugar - Brett Cannon]({{< ref "syntactic-sugar.md" >}})
+
+{{< include file="/2023/syntactic-sugar.md.part" >}}
+
+### [How memory profilers work - Pablo Galindo Salgado][5]
+
+{{< include file="/2023/memory-profilers.md.part" >}}
+
+### [How we are making CPython faster. Past, present and future. - Mark Shannon][6]
+
+{{< include file="/2023/faster-cpython.md.part" >}}
+
+## Day 3
+
+### [Keynote (Day 1) - Guido van Rossum]({{< ref "keynote-day3.md" >}})
+
+{{< include file="/2023/keynote-day3.md.part" >}}
+
+## Miscellaneous Facts and Sayings
+
+{{< include file="/2023/miscellaneous-facts-sayings.md.part" >}}
+
 [1]: {{< ref "adaptive-interpreter.md" >}}
 [2]: {{< ref "timezones.md" >}}
 [3]: {{< ref "per-gil-interpreter.md" >}}
 [4]: {{< ref "nanoservices.md" >}}
+[5]: {{< ref "memory-profilers.md" >}}
+[6]: {{< ref "faster-cpython.md" >}}
