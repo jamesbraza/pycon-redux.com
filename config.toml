@@ -1,4 +1,4 @@
-baseURL = "https://jamesbraza.github.io/pycon-redux/"
+baseURL = "https://pycon-redux.com"
 theme = "hugo-geekdoc"
 title = "PyCon Redux"
 
@@ -27,7 +27,7 @@ languageName = "English"
 [params]
   # Enable 'Edit page' links. Requires 'geekdocRepo' param and the path must point to
   # the parent directory of the 'content' folder.
-  geekdocEditPath = "edit/main/pycon-redux"
+  geekdocEditPath = "edit/main"
 
   # (Optional, default static/brand.svg) Set the path to a logo for the Geekdoc
   # relative to your 'static/' folder.
