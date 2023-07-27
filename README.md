@@ -1,7 +1,7 @@
-# pycon-redux
+# pycon-redux.com
 
 Redux of learnings and talks from PyCon 2022 and onward:
-https://jamesbraza.github.io/pycon-redux/
+https://pycon-redux.com/
 
 ## Website
 
