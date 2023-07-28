@@ -1,5 +1,8 @@
 # pycon-redux.com
 
+![Lint and Test](https://github.com/jamesbraza/pycon-redux/actions/workflows/lint-test.yaml/badge.svg)
+![Deploy Site](https://github.com/jamesbraza/pycon-redux/actions/workflows/hugo.yaml/badge.svg)
+
 Redux of learnings and talks from PyCon 2022 and onward:
 https://pycon-redux.com/
 
