@@ -62,6 +62,10 @@ repos:
     rev: v1.6.1
     hooks:
       - id: mypy
+  - repo: https://github.com/pappasam/toml-sort
+    rev: v0.23.1
+    hooks:
+      - id: toml-sort-fix
   - repo: local
     hooks:
       - id: pylint
