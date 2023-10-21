@@ -23,6 +23,33 @@ enable = [
 # Set true to activate the evaluation score.
 score = false
 
+[tool.ruff]
+ignore = [
+    "COM812",  # Trailing comma with black leads to wasting lines
+    "D212",  # Summary should be on second line (opposite of D213)
+    "EM",  # Overly pedantic
+]
+# Line length to use when enforcing long-lines violations (like `E501`).
+line-length = 97  # ceil(1.1 * 88) makes `E501` equivalent to `B950`
+# The minimum Python version to target, e.g., when considering automatic code
+# upgrades, like rewriting type annotations.
+target-version = "py310"
+# Enable application of unsafe fixes.
+unsafe-fixes = true
+
+[tool.ruff.flake8-annotations]
+mypy-init-return = true
+
+[tool.ruff.pycodestyle]
+# The maximum line length to allow for line-length violations within
+# documentation (W505), including standalone comments.
+max-doc-length = 97  # Match line-length
+
+[tool.ruff.pydocstyle]
+# Whether to use Google-style or NumPy-style conventions or the PEP257
+# defaults when analyzing docstring sections.
+convention = "google"
+
 [tool.tomlsort]
 all = true
 in_place = true
