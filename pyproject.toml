@@ -1,28 +1,58 @@
 [tool.pylint]
-# SEE: https://github.com/PyCQA/pylint/blob/master/examples/pylintrc
-
-[tool.pylint.reports]
-
-# Set true to activate the evaluation score.
-score = false
 
 [tool.pylint.messages_control]
-
 # Disable the message, report, category or checker with the given id(s).
 disable = [
-    "missing-docstring",  # Let docformatter and ruff take care of docstrings
     "empty-docstring",  # Let docformatter and ruff take care of docstrings
+    "logging-fstring-interpolation",  # f-strings are convenient
+    "missing-docstring",  # Let docformatter and ruff take care of docstrings
     "too-few-public-methods",  # Don't care to enforce this
     "too-many-arguments",  # Don't care to enforce this
-    "wrong-import-order",  # Rely on isort for this
     "ungrouped-imports",  # Rely on isort for this
+    "unsubscriptable-object",  # Buggy, SEE: https://github.com/PyCQA/pylint/issues/3637
     "unused-wildcard-import",  # Wildcard imports are convenient
     "wildcard-import",  # Wildcard imports are convenient
-    "unsubscriptable-object",  # Buggy, SEE: https://github.com/PyCQA/pylint/issues/3637
-    "logging-fstring-interpolation",  # f-strings are convenient
+    "wrong-import-order",  # Rely on isort for this
 ]
-
 # Enable the message, report, category or checker with the given id(s).
 enable = [
     "useless-suppression",  # Print unused `pylint: disable` comments
 ]
+
+[tool.pylint.reports]
+# Set true to activate the evaluation score.
+score = false
+
+[tool.ruff]
+ignore = [
+    "COM812",  # Trailing comma with black leads to wasting lines
+    "D212",  # Summary should be on second line (opposite of D213)
+    "EM",  # Overly pedantic
+]
+# Line length to use when enforcing long-lines violations (like `E501`).
+line-length = 97  # ceil(1.1 * 88) makes `E501` equivalent to `B950`
+# The minimum Python version to target, e.g., when considering automatic code
+# upgrades, like rewriting type annotations.
+target-version = "py310"
+# Enable application of unsafe fixes.
+unsafe-fixes = true
+
+[tool.ruff.flake8-annotations]
+mypy-init-return = true
+
+[tool.ruff.pycodestyle]
+# The maximum line length to allow for line-length violations within
+# documentation (W505), including standalone comments.
+max-doc-length = 97  # Match line-length
+
+[tool.ruff.pydocstyle]
+# Whether to use Google-style or NumPy-style conventions or the PEP257
+# defaults when analyzing docstring sections.
+convention = "google"
+
+[tool.tomlsort]
+all = true
+in_place = true
+spaces_before_inline_comment = 2  # Match Python PEP 8
+spaces_indent_inline_array = 4  # Match Python PEP 8
+trailing_comma_inline_array = true

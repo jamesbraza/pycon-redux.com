@@ -1,8 +1,8 @@
 import contextlib
-from collections import deque
-from collections.abc import Iterable, Generator
-from typing import Any
 import itertools
+from collections import deque
+from collections.abc import Generator, Iterable
+from typing import Any
 
 
 class DumpData(Exception):
@@ -33,7 +33,7 @@ def moving_window_average_gen(
     current_sum = sum(window)
 
     def on_new_value(value: Any) -> float:
-        if not isinstance(value, (int, float)):
+        if not isinstance(value, int | float):
             raise TypeError(f"Please send in numbers, not {type(value)}.")
         nonlocal current_sum
         current_sum += value if len(window) < window_size else value - window.popleft()

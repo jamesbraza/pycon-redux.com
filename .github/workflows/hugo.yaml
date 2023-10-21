@@ -33,9 +33,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      GEEKDOC_VERSION: 0.40.1
+      GEEKDOC_VERSION: 0.41.3
       # NOTE: keep Hugo version >= 0.111.0, for table of contents improvements
-      HUGO_VERSION: 0.115.4
+      HUGO_VERSION: 0.119.0
     steps:
       - name: Install Hugo CLI
         # yamllint disable rule:line-length
@@ -46,7 +46,7 @@ jobs:
       - name: Install Dart Sass Embedded
         run: sudo snap install dart-sass-embedded
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: recursive
       - name: Setup Pages

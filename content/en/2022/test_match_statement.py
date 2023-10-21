@@ -1,11 +1,11 @@
 from collections.abc import Callable
+from datetime import timedelta
 
 import pytest
-from datetime import timedelta
 from match_statement import (
-    get_display_brute_conditionals,
-    Talk,
     Status,
+    Talk,
+    get_display_brute_conditionals,
     get_display_condensed_conditionals,
     get_display_lookup,
     get_display_match,
