@@ -17,8 +17,7 @@ def moving_window_average_gen(
     data: Iterable[float] = (),
     window_size: int = 3,
 ) -> Generator[float | int | None, float, None]:
-    """
-    Run a nanoservice for a simple moving window average.
+    """Run a nanoservice for a simple moving window average.
 
     Starter: https://docs.python.org/3/library/collections.html#deque-recipes
 

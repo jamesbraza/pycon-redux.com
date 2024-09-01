@@ -205,10 +205,15 @@ unfixable = [
 mypy-init-return = true
 
 [tool.ruff.lint.per-file-ignores]
-"**/tests/*.py" = [
+"**/*test*.py" = [
     "N802",  # Tests function names can match class names
     "PLR2004",  # Tests can have magic values
     "S101",  # Tests can have assertions
+]
+"content/en/2023/nanoservices/nanoservices.py" = [
+    "N818",  # Demo can have non-Error suffixes
+    "PLR2004",  # Demo can have magic values
+    "S101",  # Demo can have assertions
 ]
 
 [tool.ruff.lint.pycodestyle]
