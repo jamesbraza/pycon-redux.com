@@ -25,3 +25,5 @@ Hope you enjoy!
 {{< button size="large" relref="2022" >}}Go to 2022 redux{{< /button >}}
 \
 {{< button size="large" relref="2023" >}}Go to 2023 redux{{< /button >}}
+\
+{{< button size="large" relref="2024" >}}No 2024 redux{{< /button >}}
