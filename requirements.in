@@ -1,6 +1,0 @@
-coverage
-pip-tools
-pre-commit
-pylint
-pytest
-pytest-subtests  # Remove after https://github.com/pytest-dev/pytest-subtests/issues/71

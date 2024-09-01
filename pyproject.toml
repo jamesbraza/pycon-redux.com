@@ -1,18 +1,108 @@
+[project]
+name = "pycon-redux"
+readme = "README.md"
+requires-python = ">=3.10"
+version = "0.1.0"
+
+[tool.codespell]
+check-filenames = true
+check-hidden = true
+ignore-words-list = "astroid,ned,ser"
+
+[tool.mypy]
+# Type-checks the interior of functions without type annotations.
+check_untyped_defs = true
+# Allows enabling one or multiple error codes globally. Note: This option will
+# override disabled error codes from the disable_error_code option.
+enable_error_code = [
+    "ignore-without-code",
+    "mutable-override",
+    "redundant-cast",
+    "redundant-expr",
+    "redundant-self",
+    "truthy-bool",
+    "truthy-iterable",
+    "unimported-reveal",
+    "unreachable",
+    "unused-awaitable",
+    "unused-ignore",
+]
+# Shows a short summary line after error messages.
+error_summary = false
+# A regular expression that matches file names, directory names and paths which mypy
+# should ignore while recursively discovering files to check. Use forward slashes (/) as
+# directory separators on all platforms.
+exclude = [
+    "^\\.?venv",  # SEE: https://regex101.com/r/0rp5Br/1
+]
+# Use visually nicer output in error messages: use soft word wrap, show source
+# code snippets, and show error location markers.
+pretty = true
+# Shows column numbers in error messages.
+show_column_numbers = true
+# Shows error codes in error messages.
+# SEE: https://mypy.readthedocs.io/en/stable/error_codes.html#error-codes
+show_error_codes = true
+# Prefixes each error with the relevant context.
+show_error_context = true
+# Warns about casting an expression to its inferred type.
+warn_redundant_casts = true
+# Shows a warning when encountering any code inferred to be unreachable or
+# redundant after performing type analysis.
+warn_unreachable = true
+# Warns about per-module sections in the config file that do not match any
+# files processed when invoking mypy.
+warn_unused_configs = true
+# Warns about unneeded `# type: ignore` comments.
+warn_unused_ignores = true
+
 [tool.pylint]
+
+[tool.pylint.format]
+# Maximum number of characters on a single line.
+max-line-length = 97  # Match ruff line-length
+
+[tool.pylint.main]
+# Use multiple processes to speed up Pylint. Specifying 0 will auto-detect the
+# number of processors available to use, and will cap the count on Windows to
+# avoid hangs.
+jobs = 0
 
 [tool.pylint.messages_control]
 # Disable the message, report, category or checker with the given id(s).
 disable = [
-    "empty-docstring",  # Let docformatter and ruff take care of docstrings
+    "bare-except",  # Rely on ruff E722 for this
+    "broad-exception-raised",  # Rely on ruff TRY002 for this
+    "empty-docstring",  # Let pep257 take care of docstrings
+    "expression-not-assigned",  # Rely on mypy func-returns-value for this
+    "fixme",  # codetags are useful
+    "function-redefined",  # Rely on mypy no-redef for this
+    "import-outside-toplevel",  # Rely on ruff PLC0415 for this
+    "line-too-long",  # Rely on ruff E501 for this
     "logging-fstring-interpolation",  # f-strings are convenient
+    "logging-too-many-args",  # Rely on ruff PLE1205 for this
     "missing-docstring",  # Let docformatter and ruff take care of docstrings
+    "missing-final-newline",  # Rely on ruff W292 for this
+    "no-else-return",  # Rely on ruff RET506 for this
+    "no-member",  # Buggy, SEE: https://github.com/pylint-dev/pylint/issues/8138
+    "protected-access",  # Don't care to enforce this in testing
+    "raise-missing-from",  # Rely on ruff B904 for this
+    "redefined-builtin",  # Rely on ruff A002 for this
     "too-few-public-methods",  # Don't care to enforce this
     "too-many-arguments",  # Don't care to enforce this
-    "ungrouped-imports",  # Rely on isort for this
+    "too-many-branches",  # Rely on ruff PLR0912 for this
+    "too-many-locals",  # Rely on ruff PLR0914 for this
+    "too-many-return-statements",  # Rely on ruff PLR0911 for this
+    "too-many-statements",  # Rely on ruff PLR0915 for this
+    "ungrouped-imports",  # Rely on ruff I001 for this
     "unsubscriptable-object",  # Buggy, SEE: https://github.com/PyCQA/pylint/issues/3637
+    "unsupported-membership-test",  # Buggy, SEE: https://github.com/pylint-dev/pylint/issues/3045
+    "unused-argument",  # Rely on ruff ARG002 for this
+    "unused-import",  # Rely on ruff F401 for this
+    "unused-variable",  # Rely on ruff F841 for this
     "unused-wildcard-import",  # Wildcard imports are convenient
     "wildcard-import",  # Wildcard imports are convenient
-    "wrong-import-order",  # Rely on isort for this
+    "wrong-import-order",  # Rely on ruff I001 for this
 ]
 # Enable the message, report, category or checker with the given id(s).
 enable = [
@@ -23,29 +113,115 @@ enable = [
 # Set true to activate the evaluation score.
 score = false
 
+[tool.pylint.similarities]
+# Minimum lines number of a similarity.
+min-similarity-lines = 10
+
 [tool.ruff]
-ignore = [
-    "COM812",  # Trailing comma with black leads to wasting lines
-    "D212",  # Summary should be on second line (opposite of D213)
-    "EM",  # Overly pedantic
-]
 # Line length to use when enforcing long-lines violations (like `E501`).
 line-length = 97  # ceil(1.1 * 88) makes `E501` equivalent to `B950`
-# The minimum Python version to target, e.g., when considering automatic code
-# upgrades, like rewriting type annotations.
-target-version = "py310"
 # Enable application of unsafe fixes.
 unsafe-fixes = true
 
-[tool.ruff.flake8-annotations]
+[tool.ruff.format]
+# Enable reformatting of code snippets in docstrings.
+docstring-code-format = true
+# Enable preview style formatting.
+preview = true
+
+[tool.ruff.lint]
+explicit-preview-rules = true
+extend-select = [
+    "C420",
+    "FURB110",
+    "FURB113",
+    "FURB116",
+    "FURB131",
+    "FURB132",
+    "FURB140",
+    "FURB142",
+    "FURB145",
+    "FURB148",
+    "FURB152",
+    "FURB154",
+    "FURB157",
+    "FURB164",
+    "FURB166",
+    "FURB171",
+    "FURB180",
+    "FURB192",
+    "PLR6104",
+    "PLR6201",
+    "PLW0108",
+    "RUF022",
+]
+ignore = [
+    "ANN",  # Don't care to enforce typing
+    "BLE001",  # Don't care to enforce blind exception catching
+    "COM812",  # Trailing comma with black leads to wasting lines
+    "D100",  # D100, D101, D102, D103, D104, D105, D106, D107: don't always need docstrings
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D106",
+    "D107",
+    "D203",  # Keep docstring next to the class definition (covered by D211)
+    "D212",  # Summary should be on second line (opposite of D213)
+    "D402",  # It's nice to reuse the method name
+    "D406",  # Google style requires ":" at end
+    "D407",  # We aren't using numpy style
+    "D413",  # Blank line after last section. -> No blank line
+    "DTZ",  # Don't care to have timezone safety
+    "EM",  # Overly pedantic
+    "FBT001",  # FBT001, FBT002: overly pedantic
+    "FBT002",
+    "FIX",  # Don't care to prevent TODO, FIXME, etc.
+    "G004",  # f-strings are convenient
+    "INP001",  # Can use namespace packages
+    "ISC001",  # For ruff format compatibility
+    "PTH",  # Overly pedantic
+    "SLF001",  # Overly pedantic
+    "T201",  # Overly pedantic
+    "TCH001",  # TCH001, TCH002, TCH003: don't care to enforce type checking blocks
+    "TCH002",
+    "TCH003",
+    "TD002",  # Don't care for TODO author
+    "TD003",  # Don't care for TODO links
+    "TRY003",  # Overly pedantic
+]
+preview = true
+select = ["ALL"]
+unfixable = [
+    "B007",  # While debugging, unused loop variables can be useful
+    "B905",  # Default fix is zip(strict=False), but that can hide bugs
+    "ERA001",  # While debugging, temporarily commenting code can be useful
+    "F401",  # While debugging, unused imports can be useful
+    "F841",  # While debugging, unused locals can be useful
+]
+
+[tool.ruff.lint.flake8-annotations]
 mypy-init-return = true
 
-[tool.ruff.pycodestyle]
+[tool.ruff.lint.per-file-ignores]
+"**/*test*.py" = [
+    "N802",  # Tests function names can match class names
+    "PLR2004",  # Tests can have magic values
+    "S101",  # Tests can have assertions
+]
+"content/en/2023/nanoservices/nanoservices.py" = [
+    "N818",  # Demo can have non-Error suffixes
+    "PLR2004",  # Demo can have magic values
+    "S101",  # Demo can have assertions
+]
+
+[tool.ruff.lint.pycodestyle]
 # The maximum line length to allow for line-length violations within
 # documentation (W505), including standalone comments.
 max-doc-length = 97  # Match line-length
 
-[tool.ruff.pydocstyle]
+[tool.ruff.lint.pydocstyle]
 # Whether to use Google-style or NumPy-style conventions or the PEP257
 # defaults when analyzing docstring sections.
 convention = "google"
@@ -56,3 +232,13 @@ in_place = true
 spaces_before_inline_comment = 2  # Match Python PEP 8
 spaces_indent_inline_array = 4  # Match Python PEP 8
 trailing_comma_inline_array = true
+
+[tool.uv]
+dev-dependencies = [
+    "coverage",
+    "ipython>=8",  # Pin to keep recent
+    "pre-commit>=3.4",
+    "pylint>=3",
+    "pytest",
+    "pytest-subtests",  # Remove after https://github.com/pytest-dev/pytest-subtests/issues/71
+]
