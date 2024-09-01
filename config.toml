@@ -13,9 +13,6 @@ title = "PyCon Redux"
 contentDir = "content/en"
 languageName = "English"
 
-# Needed for mermaid shortcodes
-[markup]
-
 [markup.goldmark.renderer]
 # Needed for mermaid shortcode
 unsafe = true
